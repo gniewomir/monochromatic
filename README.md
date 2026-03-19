@@ -3,8 +3,16 @@
 A browser extension that keeps selected websites in grayscale to reduce distractions.
 
 ## Why
+Part of the enshittification of the internet is design intended to keep us hooked and engaged.
+That is why features that fry our dopamine receptors, i.e., short-form TikTok-like content,
+cannot be turned off on most platforms.
 
-Part of the enshittification of the internet is design intended to keep us hooked and engaged. After seeing promising results when switching a mobile device to grayscale (an accessibility option), this extension brings the same approach to the desktop browser. Slightly changing incentives beats relying on self-control.
+The network effect makes deleting an account painful, and exercising self-control is not always sustainable.
+That is why I believe in slightly changing incentives.
+
+After seeing promising results when I switched my mobile device to grayscale (an accessibility
+option), I decided to build a browser extension to try the same approach on my desktop. Give it a
+try.
 
 ## How it works
 
