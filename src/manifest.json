@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Monochromatic",
+  "short_name": "Monochromatic",
+  "description": "Keep selected websites in grayscale to reduce distractions.",
+  "version": "0.2.0",
+  "permissions": ["storage", "tabs", "contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Monochromatic"
+  }
+}
