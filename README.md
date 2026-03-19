@@ -36,6 +36,15 @@ npm run release    # build and package into a .zip for submission
 
 Load the `dist/` directory as an unpacked extension in your browser.
 
+## Releasing
+
+```bash
+npm run release -- 0.4.0
+```
+
+This updates the version in `package.json`, `src/manifest.json`, and `package-lock.json`,
+runs a production build, and packages the result into `monochromatic-v0.4.0.zip` ready for store submission.
+
 ## Support
 
 - [Buy Me a Coffee](https://ko-fi.com/I3I61GPLRC)
