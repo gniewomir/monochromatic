@@ -47,6 +47,9 @@ const zipName = `monochromatic-v${version}.zip`;
 execSync(`rm -f "${zipName}"`, { cwd: ROOT });
 execSync(`cd dist && zip -r "../${zipName}" .`, { cwd: ROOT, stdio: "inherit" });
 
+console.log("\nFixing formatting...");
+execSync("npm run format", { cwd: ROOT, stdio: "inherit" });
+
 const tag = `v${version}`;
 console.log(`\nCommitting version bump and tagging as ${tag}...`);
 execSync("git add package.json package-lock.json src/manifest.json", {
