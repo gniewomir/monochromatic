@@ -25,13 +25,11 @@ try.
 
 ## Development
 
-Requires Node.js.
-
 ```bash
 npm install
 npm run build      # one-off production build
 npm run watch      # rebuild on changes
-npm run typecheck   # run TypeScript type checking
+npm run typecheck  # run TypeScript type checking
 npm run release    # build and package into a .zip for submission
 ```
 
