@@ -37,7 +37,9 @@ function parseArgs() {
   const url = args[0];
   if (!url) {
     console.error("Usage: node scripts/take-screenshot.mjs <url> [--scroll <pixels>]");
-    console.error("Example: node scripts/take-screenshot.mjs https://www.youtube.com/@BBCEarth/videos --scroll 440");
+    console.error(
+      "Example: node scripts/take-screenshot.mjs https://www.youtube.com/@BBCEarth/videos --scroll 440",
+    );
     process.exit(1);
   }
   try {

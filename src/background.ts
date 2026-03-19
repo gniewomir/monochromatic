@@ -34,7 +34,7 @@ async function updateActionState(tabId: number | undefined, tabUrl?: string): Pr
 
   const domains = await getConfiguredDomains();
 
-  let host = "";
+  let host: string;
   try {
     host = tabUrl ? new URL(tabUrl).hostname.toLowerCase() : "";
   } catch {
@@ -64,7 +64,7 @@ async function toggleCurrentDomain(tab: chrome.tabs.Tab): Promise<void> {
     return;
   }
 
-  let parsed: URL | null = null;
+  let parsed: URL;
   try {
     parsed = new URL(url);
   } catch {

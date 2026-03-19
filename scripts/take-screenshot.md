@@ -15,9 +15,9 @@ npx playwright install chromium
 npm run screenshot -- <url> [--scroll <pixels>]
 ```
 
-| Argument | Description |
-| --- | --- |
-| `<url>` | Page to screenshot (required) |
+| Argument            | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| `<url>`             | Page to screenshot (required)                                  |
 | `--scroll <pixels>` | Scroll down before capturing, useful for skipping page headers |
 
 ## Output

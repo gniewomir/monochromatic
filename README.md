@@ -3,6 +3,7 @@
 A browser extension that keeps selected websites in grayscale to reduce distractions.
 
 ## Why
+
 Part of the enshittification of the internet is design intended to keep us hooked and engaged.
 That is why features that fry our dopamine receptors, i.e., short-form TikTok-like content,
 cannot be turned off on most platforms.
