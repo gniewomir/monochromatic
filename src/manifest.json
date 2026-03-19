@@ -3,7 +3,7 @@
   "name": "Monochromatic",
   "short_name": "Monochromatic",
   "description": "Keep selected websites in grayscale to reduce distractions.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "permissions": ["storage", "tabs", "contextMenus"],
   "background": {
     "service_worker": "background.js"
