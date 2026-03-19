@@ -49,7 +49,10 @@ execSync(`cd dist && zip -r "../${zipName}" .`, { cwd: ROOT, stdio: "inherit" })
 
 const tag = `v${version}`;
 console.log(`\nCommitting version bump and tagging as ${tag}...`);
-execSync("git add package.json package-lock.json src/manifest.json", { cwd: ROOT, stdio: "inherit" });
+execSync("git add package.json package-lock.json src/manifest.json", {
+  cwd: ROOT,
+  stdio: "inherit",
+});
 execSync(`git commit -m "release ${tag}"`, { cwd: ROOT, stdio: "inherit" });
 execSync(`git tag -a "${tag}" -m "release ${tag}"`, { cwd: ROOT, stdio: "inherit" });
 
