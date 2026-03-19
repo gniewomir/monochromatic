@@ -1,0 +1,36 @@
+# Monochromatic
+
+A browser extension that keeps selected websites in grayscale to reduce distractions.
+
+## Why
+
+Part of the enshittification of the internet is design intended to keep us hooked and engaged. After seeing promising results when switching a mobile device to grayscale (an accessibility option), this extension brings the same approach to the desktop browser. Slightly changing incentives beats relying on self-control.
+
+## How it works
+
+1. Install the extension
+2. Pin the icon to your toolbar
+3. Click the icon on any page to toggle grayscale for that domain
+4. The setting is saved and applied automatically on future visits
+5. Unpin the icon to increase friction if you are tempted to see the colorful version again
+
+## Development
+
+Requires Node.js.
+
+```bash
+npm install
+npm run build      # one-off production build
+npm run watch      # rebuild on changes
+npm run typecheck   # run TypeScript type checking
+npm run release    # build and package into a .zip for submission
+```
+
+Load the `dist/` directory as an unpacked extension in your browser.
+
+## Support
+
+- [Buy Me a Coffee](https://ko-fi.com/I3I61GPLRC)
+- [Report an issue](https://github.com/gniewomir/monochromatic/issues) — keep in mind that simplicity is a feature itself
+- [Blog](https://gniewomir.com)
+- [Email](mailto:gniewomir.swiechowski+monochromatic@gmail.com)

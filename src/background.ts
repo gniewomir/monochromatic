@@ -42,13 +42,19 @@ async function updateActionState(tabId: number | undefined, tabUrl?: string): Pr
   }
 
   const isConfigured = shouldApplyToHost(host, domains);
-  const badgeText = isConfigured ? "\u2713" : "\u2717";
+  const variant = isConfigured ? "gradient" : "grayscale";
 
   try {
-    await chrome.action.setBadgeBackgroundColor({ color: "#ccc" });
-    await chrome.action.setBadgeText({ text: badgeText, tabId });
+    await chrome.action.setIcon({
+      tabId,
+      path: {
+        16: `icons/icon-${variant}-16.png`,
+        24: `icons/icon-${variant}-24.png`,
+        32: `icons/icon-${variant}-32.png`,
+      },
+    });
   } catch (error) {
-    logError("Failed to update action badge", error);
+    logError("Failed to update action icon", error);
   }
 }
 

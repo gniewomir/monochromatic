@@ -15,7 +15,18 @@
       "run_at": "document_start"
     }
   ],
+  "icons": {
+    "16": "icons/icon-gradient-16.png",
+    "32": "icons/icon-gradient-32.png",
+    "48": "icons/icon-gradient-48.png",
+    "128": "icons/icon-gradient-128.png"
+  },
   "action": {
-    "default_title": "Monochromatic"
+    "default_title": "Monochromatic",
+    "default_icon": {
+      "16": "icons/icon-gradient-16.png",
+      "24": "icons/icon-gradient-24.png",
+      "32": "icons/icon-gradient-32.png"
+    }
   }
 }
