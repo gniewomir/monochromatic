@@ -42,7 +42,14 @@ npm run release -- 0.4.0
 ```
 
 This updates the version in `package.json`, `src/manifest.json`, and `package-lock.json`,
-runs a production build, and packages the result into `monochromatic-v0.4.0.zip` ready for store submission.
+runs a production build, packages the result into `monochromatic-v0.4.0.zip` ready for store submission,
+and creates an annotated git tag `v0.4.0`.
+
+Push the commit and tag to the remote:
+
+```bash
+git push --follow-tags
+```
 
 ## Support
 
