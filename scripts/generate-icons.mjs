@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const SRC = join(ROOT, "src");
+const ICONS_SRC = join(ROOT, "branding", "icons");
 const OUT = join(ROOT, "dist", "icons");
 
 const VARIANTS = [
@@ -20,7 +20,7 @@ const PADDED_CONTENT = 96;
 mkdirSync(OUT, { recursive: true });
 
 for (const { name, file } of VARIANTS) {
-  const svgBuffer = readFileSync(join(SRC, file));
+  const svgBuffer = readFileSync(join(ICONS_SRC, file));
 
   for (const size of SIZES) {
     const outPath = join(OUT, `icon-${name}-${size}.png`);
