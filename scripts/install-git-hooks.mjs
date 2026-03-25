@@ -5,11 +5,11 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 if (!existsSync(join(root, ".git"))) {
-  process.exit(0);
+    process.exit(0);
 }
 
 try {
-  execSync("git config core.hooksPath .githooks", { cwd: root, stdio: "pipe" });
+    execSync("git config core.hooksPath .githooks", { cwd: root, stdio: "pipe" });
 } catch {
-  process.exit(0);
+    process.exit(0);
 }
